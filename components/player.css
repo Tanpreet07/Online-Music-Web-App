@@ -1,0 +1,151 @@
+.player-container{
+    width: 52vw;
+    height: 125px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    align-items: center;
+    /* box-shadow: -10px -10px 20px rgb(47, 48, 80); */
+}
+.player-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.player-inner-main{
+    /* border: 1px solid white; */
+    color: white;
+    width: 99%;
+    height: 118px;
+    /* border: 1px solid white; */
+    margin-left: 4px;
+}
+.show-list-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#show-list-btn{
+    margin-right: 20px;
+    height: 20px;
+    display: none;
+}
+.show-list-box > div > p{
+    font-size: 0.7rem;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.navigation-box{
+    width: 100%;
+    height: 29px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2px;
+}
+.navigation-bar{
+    width: 97%;
+    height: 7px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.18);;
+    background-color: rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+.seek-bar{
+    background-color: white;
+    height: 100%;
+    width: 0;
+    border-radius: 2px;
+}
+.timing-des-box{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+}
+.timing-des-box > p{
+    margin-top: 2px;
+    font-size: 0.7rem;
+}
+.player-btn-box{
+    /* border: 1px solid white; */
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.previous-btn,.play-pause-btn,.next-btn{
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.play-pause-btn:hover{
+    background-color: rgba(77, 77, 114, 0.899);
+    border: none;
+}
+.previous-btn:hover{
+    background-color: rgba(77, 77, 114, 0.899);
+    border: none;
+}
+.next-btn:hover{
+    background-color: rgba(77, 77, 114, 0.899);
+    border: none;
+}
+.next-btn{
+    margin-right: 50px;
+}
+@media screen and (max-width: 450px){
+    .player-container{
+        width: 100vw;
+        height: 100px;
+        z-index: 10;
+    }
+    .player-img{
+        height: 70px;
+        width: 60px;
+    }
+    .player-btn-box{
+        height: 40px;
+    }
+    .previous-btn,.play-pause-btn,.next-btn{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 30px;
+    }
+    .next-btn{
+        margin-right: 60px;
+    }
+    .navigation-bar{
+        height: 4px;
+        margin-top: 7px;
+    }
+    .timing-des-box > p{
+        font-size: 0.6rem;
+    }
+    .show-list-box > div > p{
+        font-size: 0.6rem;
+        margin-top: 5px;
+    }
+    .player-inner-main{
+        height: 100%;
+    }
+    #show-list-btn{
+        display: inline-block;
+        background:transparent;
+        color: white;
+        font-size: 20px;
+        border: none;
+    }
+}
+

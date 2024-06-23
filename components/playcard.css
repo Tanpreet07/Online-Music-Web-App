@@ -1,0 +1,33 @@
+.card-container{
+    width: 175px;
+    height: 217px;
+    /* border: 1px solid white; */
+    margin-top: 15px;
+    margin-left: 20px;
+    /* background-color: rgba(77, 77, 114, 0.899); */
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.card-img-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+.card-img{
+    border-radius: 8px;
+    
+}
+.description-box{
+    margin-top: 3px;
+    margin-left: 7px;
+}
+.song-description{
+    font-size: 0.7rem;
+}
+.card-container:hover{
+    background-color: rgba(77, 77, 114, 0.899);
+}
