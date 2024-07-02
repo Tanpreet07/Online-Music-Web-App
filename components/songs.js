@@ -156,7 +156,7 @@ exports.songs=[
             {
                 "titlename":"Blessings",
                 "singar":"Divine",
-                "songimg":"../images/Divine.png",
+                "songimg":"./images/Divine.png",
                 "songurl":"./audio/Divine/Blessings.mp3"
             },                  
             {
